@@ -1,0 +1,193 @@
+/* css層級 */
+/* 1. !important */
+/* 2. 行內元素(style) */
+/* 3. id */
+/* 4. class */
+/* 5. 外部css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eee;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 100vh;
+    background-image: url(./img/banner.jpeg);
+    background-size: cover;
+}
+nav > a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    /* padding : 上 右 下 左 */
+    /* padding: 上下 左右 */
+    /* padding: 上下 左右 下 */
+
+    padding: 0 30px;
+}
+.banner_text {
+    color: #fff;
+    text-align: center;
+    margin-top: 300px;
+}
+.banner_text > p {
+    font-size: 20px;
+}
+.banner_text > hr {
+    width: 400px;
+    /* background: ; */
+    /* 萬能置中法 */
+    margin: 20px auto;
+}
+.banner_text > h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+/* 第二塊 */
+.new {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    padding: 100px 0;
+}
+.new_box {
+    /* 1 */
+    width: 550px;
+    height: 700px;
+    background: #fff;
+    text-align: center;
+    /* overflow: hidden; */
+    /* 2 */
+    /* width: 50%; */
+}
+.new_box > img {
+    width: 100%;
+}
+.new_box > h3 {
+    color: #eee;
+    font-size: 30px;
+}
+.new_box > hr {
+    width: 300px;
+    margin: 10px auto;
+}
+.new_box > h2 {
+    font-size: 30px;
+}
+.new_box > p {
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.new_box > a {
+    border: 1px solid #aaa;
+    /* 底線 */
+    text-decoration: none;
+    /* font-size: 25px; */
+    padding: 15px 80px;
+    color: #aaa;
+    transition: 1s;
+}
+.new_box > a:hover {
+    background: #aaa;
+    color: white;
+}
+
+/* 第三塊 */
+.coffee_bg {
+    background-image: url(./img/lesson3_bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: 20px 20px; */
+    /* height: 500px; */
+}
+
+.coffee_bg > h3 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    backdrop-filter: blur(5px) opacity(80%);
+
+    /* height: 100%;
+    height: 100px;
+    height: 100vh;
+    height: 100rem; */
+}
+/* 第四塊 */
+.content > h3 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    letter-spacing: 20px;
+    font-weight: 100;
+}
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+.content_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.content_box > a {
+    width: 585px;
+    height: 350px;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    line-height: 350px;
+    text-align: center;
+}
+.content_box > a > span {
+    display: block;
+    backdrop-filter: blur(3px) opacity(90%);
+    transition: 1s;
+}
+.content_box > a > span:hover {
+    backdrop-filter: blur(0px) opacity(100%);
+}
+.content_about {
+    display: block;
+    background-image: url(./img/content1.jpeg);
+}
+.content_me {
+    display: block;
+    background-image: url(./img/content2.jpeg);
+}
+/* 地圖 */
+.map {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+}
+
+/* fooder */
+footer {
+    background: #252525;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+footer > h4 {
+    font-size: 24px;
+}
+/* footer > a > img {
+    width: 32px;
+    height: 32px;
+} */
+.foot {
+    width: 32px;
+    height: 32px;
+    /* transform: scale(); */
+}
