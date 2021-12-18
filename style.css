@@ -27,6 +27,11 @@ body {
         background-position: -250px 0px;
     }
 }
+@media screen and (max-width: 414px) {
+    .banner {
+        height: 500px;
+    }
+}
 
 nav > a {
     color: #fff;
@@ -42,6 +47,11 @@ nav > a {
     color: #fff;
     text-align: center;
     margin-top: 300px;
+}
+@media screen and (max-width: 414px) {
+    .banner_text {
+        margin-top: 170px;
+    }
 }
 .banner_text > p {
     font-size: 20px;
@@ -64,10 +74,17 @@ nav > a {
     gap: 100px;
     padding: 100px 0;
 }
+
 @media screen and (max-width: 768px) {
     .new {
         width: 90%;
         gap: 50px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .new {
+        display: block;
+        padding: 50px 0;
     }
 }
 .new_box {
@@ -80,6 +97,12 @@ nav > a {
 @media screen and (max-width: 768px) {
     .new_box {
         height: 550px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .new_box {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
 .new_box > img {
