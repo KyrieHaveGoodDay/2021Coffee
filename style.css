@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
 }
 body {
     background: #eee;
@@ -21,6 +22,7 @@ body {
     height: 100vh;
     background-image: url(./img/banner.jpeg);
     background-size: cover;
+    overflow: hidden;
 }
 @media screen and (max-width: 768px) {
     .banner {
@@ -30,6 +32,13 @@ body {
 @media screen and (max-width: 414px) {
     .banner {
         height: 500px;
+    }
+}
+nav {
+}
+@media screen and (max-width: 375px) {
+    nav {
+        text-align: center;
     }
 }
 
@@ -42,6 +51,11 @@ nav > a {
     /* padding: 上下 左右 下 */
 
     padding: 0 30px;
+}
+@media screen and (max-width: 375px) {
+    nav > a {
+        padding: 0 15px;
+    }
 }
 .banner_text {
     color: #fff;
@@ -62,9 +76,19 @@ nav > a {
     /* 萬能置中法 */
     margin: 20px auto;
 }
+@media screen and (max-width: 768px) {
+    .banner_text > hr {
+        width: 100%;
+    }
+}
 .banner_text > h1 {
     font-weight: bold;
     font-size: 50px;
+}
+@media screen and (max-width: 375px) {
+    .banner_text > h1 {
+        font-size: 30px;
+    }
 }
 /* 第二塊 */
 .new {
@@ -182,6 +206,15 @@ nav > a {
     }
 }
 /* 第四塊 */
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+}
 .content > h3 {
     text-align: center;
     color: #333;
@@ -194,20 +227,23 @@ nav > a {
         font-size: 30px;
     }
 }
-.content {
-    width: 1200px;
-    margin: 0 auto;
-}
-@media screen and (max-width: 768px) {
-    .content {
-        width: 90%;
+@media screen and (max-width: 414px) {
+    .content > h3 {
+        font-size: 24px;
+        letter-spacing: 5px;
     }
 }
+
 .content_box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+@media screen and (max-width: 414px) {
+    .content_box {
+        flex-wrap: wrap;
+    }
 }
 .content_box > a {
     width: 585px;
