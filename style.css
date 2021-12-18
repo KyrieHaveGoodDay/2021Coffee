@@ -22,6 +22,12 @@ body {
     background-image: url(./img/banner.jpeg);
     background-size: cover;
 }
+@media screen and (max-width: 768px) {
+    .banner {
+        background-position: -250px 0px;
+    }
+}
+
 nav > a {
     color: #fff;
     font-size: 25px;
@@ -58,15 +64,23 @@ nav > a {
     gap: 100px;
     padding: 100px 0;
 }
+@media screen and (max-width: 768px) {
+    .new {
+        width: 90%;
+        gap: 50px;
+    }
+}
 .new_box {
     /* 1 */
     width: 550px;
     height: 700px;
     background: #fff;
     text-align: center;
-    /* overflow: hidden; */
-    /* 2 */
-    /* width: 50%; */
+}
+@media screen and (max-width: 768px) {
+    .new_box {
+        height: 550px;
+    }
 }
 .new_box > img {
     width: 100%;
@@ -75,6 +89,11 @@ nav > a {
     color: #eee;
     font-size: 30px;
 }
+@media screen and (max-width: 768px) {
+    .new_box > h3 {
+        font-size: 20px;
+    }
+}
 .new_box > hr {
     width: 300px;
     margin: 10px auto;
@@ -82,10 +101,20 @@ nav > a {
 .new_box > h2 {
     font-size: 30px;
 }
+@media screen and (max-width: 768px) {
+    .new_box > h2 {
+        font-size: 20px;
+    }
+}
 .new_box > p {
     text-align: left;
     padding: 30px;
     margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+    .new_box > p {
+        padding: 20px;
+    }
 }
 .new_box > a {
     border: 1px solid #aaa;
@@ -105,9 +134,11 @@ nav > a {
 .coffee_bg {
     background-image: url(./img/lesson3_bg.jpeg);
     background-size: cover;
+    /* 相容性 */
     background-attachment: fixed;
     /* background-position: 20px 20px; */
     /* height: 500px; */
+    position: relative;
 }
 
 .coffee_bg > h3 {
@@ -122,6 +153,11 @@ nav > a {
     height: 100vh;
     height: 100rem; */
 }
+@media screen and (max-width: 768px) {
+    .coffee_bg > h3 {
+        font-size: 30px;
+    }
+}
 /* 第四塊 */
 .content > h3 {
     text-align: center;
@@ -130,9 +166,19 @@ nav > a {
     letter-spacing: 20px;
     font-weight: 100;
 }
+@media screen and (max-width: 768px) {
+    .content > h3 {
+        font-size: 30px;
+    }
+}
 .content {
     width: 1200px;
     margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
 }
 .content_box {
     display: flex;
